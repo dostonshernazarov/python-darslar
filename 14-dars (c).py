@@ -18,12 +18,5 @@ dictionary = {
     'lstrip':'chao tarafga matnni suradi',\
     'rstrip':'o\'ng tarafga matnni suradi',\
  }
-word = input('Kalit so\'z kiriting:').lower()
-#print(dictionary.get(word))
-tarjima = dictionary.get(word)
-
-if tarjima==None:
-    print('Bunday so\'z mavjud emas')
-    
-else:
-    print(f"{word.lower()} so'zining vazifasi {tarjima} ")
+for key, value in sorted(dictionary.items()):
+    print(f"{key.title()}-{value.title()}")
